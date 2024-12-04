@@ -2,7 +2,7 @@
   "name": "mypage",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/CoderZHH/countingGirl",
+  "homepage": "https://CoderZHH.github.io/countingGirl",
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
