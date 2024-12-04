@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://github.com/CoderZHH/countingGirl/static/css/main.0186ddda.css",
+    "main.js": "https://github.com/CoderZHH/countingGirl/static/js/main.168d51c7.js",
+    "static/media/数钱女孩.mp3": "https://github.com/CoderZHH/countingGirl/static/media/数钱女孩.b5216e164688e58a4098.mp3",
+    "static/media/yjh.jpg": "https://github.com/CoderZHH/countingGirl/static/media/yjh.aeec681dec903b1524cb.jpg",
+    "index.html": "https://github.com/CoderZHH/countingGirl/index.html",
+    "main.0186ddda.css.map": "https://github.com/CoderZHH/countingGirl/static/css/main.0186ddda.css.map",
+    "main.168d51c7.js.map": "https://github.com/CoderZHH/countingGirl/static/js/main.168d51c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0186ddda.css",
+    "static/js/main.168d51c7.js"
+  ]
+}
