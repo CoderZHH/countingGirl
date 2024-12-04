@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的推送
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # 更新为 actions/checkout v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # 更新为 actions/setup-node v3
+        with:
+          node-version: '18'  # 设置 Node.js 版本
+
+      - name: Install dependencies
+        run: npm install  # 安装项目依赖
+
+      - name: Build
+        run: npm run build  # 构建 React 项目
+        env:
+          CI: false  # 防止 CI 环境优化，特别是在 React 中
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5  # 使用 GitHub Pages 部署 Action
+        with:
+          branch: gh-pages  # 目标分支
+          folder: build  # 构建文件的路径
+          token: ${{ secrets.GITHUB_TOKEN }}  # GitHub Token，用于认证
